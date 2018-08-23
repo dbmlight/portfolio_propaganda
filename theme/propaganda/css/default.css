@@ -5,49 +5,49 @@
 @font-face {
     font-family: 'gotham_blackregular';
     src: url('../fonts/gotham-black-webfont.woff2') format('woff2'),
-        url('../fonts/gotham-black-webfont.woff') format('woff');
+         url('../fonts/gotham-black-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'gotham_boldregular';
     src: url('../fonts/gotham-bold-webfont.woff2') format('woff2'),
-        url('../fonts/gotham-bold-webfont.woff') format('woff');
+         url('../fonts/gotham-bold-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'gotham_lightregular';
     src: url('../fonts/gotham-light-webfont.woff2') format('woff2'),
-        url('../fonts/gotham-light-webfont.woff') format('woff');
+         url('../fonts/gotham-light-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'gotham_mediumregular';
     src: url('../fonts/gotham-medium-webfont.woff2') format('woff2'),
-        url('../fonts/gotham-medium-webfont.woff') format('woff');
+         url('../fonts/gotham-medium-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'nanumbarungothicregular';
     src: url('../fonts/nanumbarungothic-webfont.woff2') format('woff2'),
-        url('../fonts/nanumbarungothic-webfont.woff') format('woff');
+         url('../fonts/nanumbarungothic-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'nanumbarungothicbold';
     src: url('../fonts/nanumbarungothicbold-webfont.woff2') format('woff2'),
-        url('../fonts/nanumbarungothicbold-webfont.woff') format('woff');
+         url('../fonts/nanumbarungothicbold-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'nanumbarungothiclight';
     src: url('../fonts/nanumbarungothiclight-webfont.woff2') format('woff2'),
-        url('../fonts/nanumbarungothiclight-webfont.woff') format('woff');
+         url('../fonts/nanumbarungothiclight-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 @font-face {
     font-family: 'nanumsquarebold';
     src: url('../fonts/nanumsquareb-webfont.woff2') format('woff2'),
-        url('../fonts/nanumsquareb-webfont.woff') format('woff');
+         url('../fonts/nanumsquareb-webfont.woff') format('woff');
     font-weight: normal;font-style: normal;
 }
 
@@ -101,12 +101,14 @@ table {
     border-spacing: 0;
 }
 
+
 /* dean reset */
 a {color: #161616;text-decoration: none}
 img {vertical-align: top}
 * {box-sizing: border-box}
 input, button {border-radius: 0;-webkit-appearance: none}
 textarea {resize: none}
+
 
 /* common */
 .clearfix:after {display: block;clear: both;content: ''}
@@ -206,6 +208,20 @@ textarea {resize: none}
 #sfl, #gr_id, #view {height: 24px;border: 1px solid #e4eaec} /* 검색 왼쪽에 있는 애 select */
 #bo_list_total {margin-bottom: 11px} /* Total n건 n페이지 */
 #secret, #wr_secret, #notice, #chkall, #gall_ul input, .td_chk input {-webkit-appearance: checkbox}
+
+
+/* RWD */
+/*- mobile_small -*/
+@media screen and (max-width: 479px;) {}
+
+/*- mobile_landscape -*/
+@media screen and (min-width: 640px;) {}
+
+/*- tablet -*/
+@media screen and (min-width: 760px;) {}
+
+/*- desktop -*/
+@media screen and (min-width: 1200px;) {}
 
 
 /* SIR 지운아빠 */
