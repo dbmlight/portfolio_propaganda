@@ -11,63 +11,26 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 ?>
-
-    </div>
-    <div id="aside">
-        <?php
-        //공지사항
-        // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
-        // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-        // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-        echo latest('theme/notice', 'notice', 4, 13);
-        ?>
-        <?php echo outlogin('theme/basic'); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-        <?php echo poll('theme/basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-        <?php echo visit('theme/basic'); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-    </div>
-</div>
-
-</div>
+</div><!-- .pro_container end -->
 <!-- } 콘텐츠 끝 -->
 
-<hr>
-
 <!-- 하단 시작 { -->
-<div id="ft">
-
-    <div id="ft_wr">
-        <div id="ft_link">
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=company">회사소개</a>
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=privacy">개인정보처리방침</a>
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=provision">서비스이용약관</a>
-            <a href="<?php echo get_device_change_url(); ?>">모바일버전</a>
+<footer class="pro_ft">
+    <div class="ca clearfix">
+        <div class="copyright">
+            Copyright (c) 2009 PROPAGANDA. All rights reserved.
         </div>
-        <div id="ft_catch"><img src="<?php echo G5_IMG_URL; ?>/ft_logo.png" alt="<?php echo G5_VERSION ?>"></div>
-        <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>
+        <div class="fb-like" data-href="https://www.facebook.com/PropagandaGraphics" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+        <a href="#" class="ir pro_btn_top">
+            상단으로
+        </a>
+        <p class="pro_validator">
+            <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
+                <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
+            </a>
+        </p>
     </div>
-    
-    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
-        <script>
-        
-        $(function() {
-            $("#top_btn").on("click", function() {
-                $("html, body").animate({scrollTop:0}, '500');
-                return false;
-            });
-        });
-        </script>
-</div>
-
-<?php
-if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
-<?php
-}
-
-if ($config['cf_analytics']) {
-    echo $config['cf_analytics'];
-}
-?>
-
+</footer>
 <!-- } 하단 끝 -->
 
 <script>

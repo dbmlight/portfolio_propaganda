@@ -166,7 +166,7 @@ textarea {resize: none}
 /*- staff -*/
 .staff {}
 
-.staff .stf {float: left;margin: 0 50px}
+.staff .stf {float: left;margin: 0 90px}
 .staff .stf img {}
 .stf .stf_info {margin-top: 40px;text-align: center;line-height: 21px;font-family: 'gotham_mediumregular'}
 .stf .stf_info .stf_name {display: block;margin-bottom: 14px;font-family: 'gotham_boldregular';font-size: 18px;color: #c0a062}
@@ -180,7 +180,7 @@ textarea {resize: none}
 /*- contact -*/
 .contact {}
 .contact .ca {padding: 120px 10px 50px}
-.contact #map {margin-bottom: 60px;width: 940px;height: 360px}
+.contact #map {margin-bottom: 60px;width: 1180px;height: 360px}
 .contact .contact_info {float: left;width: 460px}
 .contact_info dt {margin-bottom: 6px;font-family: 'gotham_boldregular';font-size: 18px}
 .contact_info dd {margin-bottom: 24px;line-height: 24px;font-family: 'nanumbarungothiclight'}
