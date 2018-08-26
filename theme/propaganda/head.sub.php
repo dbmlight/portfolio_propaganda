@@ -45,7 +45,10 @@ if (G5_IS_MOBILE) {
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
-<title><?php echo $g5_head_title; ?></title>
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo G5_THEME_IMG_URL; ?>/favicon.ico">
+<!--dean favicon 추가-->>
+<title>PROPAGANDA</title>
+<!--dean title 추가-->>
 <?php
 $shop_css = '';
 if (defined('_SHOP_')) $shop_css = '_shop';
