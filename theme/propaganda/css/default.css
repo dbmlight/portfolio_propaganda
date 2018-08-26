@@ -112,7 +112,7 @@ textarea {resize: none}
 
 /* common */
 .clearfix:after {display: block;clear: both;content: ''}
-.ca {width: 1200px;margin: 0 auto}
+.ca {max-width: 1200px;min-width: 360px;margin: 0 auto}
 .ir {text-indent: -9999px}
 .line {display: block;margin: 19px 0 64px;width: 140px;height: 6px;background: #161616}
 
@@ -140,8 +140,6 @@ textarea {resize: none}
 .gnb.responsive .menu {display: block}
 #mn_btn.responsive .mn_opn {display: none}
 #mn_btn.responsive .mn_clse {display: block}
-
-#pro_wrap {position: relative}
 
 /* .pro_container -----------------------------------*/
 .pro_container {}
@@ -180,7 +178,7 @@ textarea {resize: none}
 /*- contact -*/
 .contact {}
 .contact .ca {padding: 120px 10px 50px}
-.contact #map {margin-bottom: 60px;width: 1180px;height: 360px}
+.contact #map {margin-bottom: 60px;height: 360px}
 .contact .contact_info {float: left;width: 460px}
 .contact_info dt {margin-bottom: 6px;font-family: 'gotham_boldregular';font-size: 18px}
 .contact_info dd {margin-bottom: 24px;line-height: 24px;font-family: 'nanumbarungothiclight'}
