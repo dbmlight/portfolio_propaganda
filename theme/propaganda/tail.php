@@ -13,7 +13,6 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 </div><!-- .pro_container end -->
 <!-- } 콘텐츠 끝 -->
-
 <!-- 하단 시작 { -->
 <footer class="pro_ft">
     <div class="ca clearfix">
@@ -32,7 +31,6 @@ if(G5_COMMUNITY_USE === false) {
     </div>
 </footer>
 <!-- } 하단 끝 -->
-
 <script>
 $(function() {
     // 폰트 리사이즈 쿠키있으면 실행
