@@ -42,43 +42,49 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <!-- staff 시작 { -->
 <div class="staff">
-    <div class="ca clearfix">
-        <h2>
-            STAFF
-        </h2>
-        <span class="line staff_line"></span>
-        <div class="stf">
-            <img src="<?php echo G5_THEME_IMG_URL; ?>/ch.png" alt="최지웅">
-            <p class="stf_info">
-                <span class="stf_name">
-                    CHOI JEE WOONG
-                </span>
-                GRAPHIC DESIGNER<br>
-                e-mail choijw21@hanmail.net<br>
-                twitter @propaganda01
-            </p>
-        </div>
-        <div class="stf">
-            <img src="<?php echo G5_THEME_IMG_URL; ?>/park.png" alt="박동우">
-            <p class="stf_info">
-                <span class="stf_name">
-                    PARK DONG WOO
-                </span>
-                GRAPHIC DESIGNER<br>
-                e-mail coolbaby0904@hanmail.net<br>
-                twitter @propaganda02
-            </p>
-        </div>
-        <div class="stf">
-            <img src="<?php echo G5_THEME_IMG_URL; ?>/lee.png" alt="이동형">
-            <p class="stf_info">
-                <span class="stf_name">
-                    LEE DONG HYOUNG
-                </span>
-                GRAPHIC DESIGNER<br>
-                e-mail ldh6683@hanmail.net<br>
-                twitter @papeeeee
-            </p>
+    <div class="ca">
+        <h2>STAFF</h2>
+        <div class="line staff_line"></div>
+        <div class="stf_co clearfix">
+            <div class="stf_box">
+                <div class="stf">
+                    <img src="<?php echo G5_THEME_IMG_URL; ?>/ch.png" alt="최지웅">
+                    <p class="stf_info">
+                        <span class="stf_name">
+                            CHOI JEE WOONG
+                        </span>
+                        GRAPHIC DESIGNER<br>
+                        e-mail choijw21@hanmail.net<br>
+                        twitter @propaganda01
+                    </p>
+                </div>
+            </div>
+            <div class="stf_box">
+                <div class="stf">
+                    <img src="<?php echo G5_THEME_IMG_URL; ?>/park.png" alt="박동우">
+                    <p class="stf_info">
+                        <span class="stf_name">
+                            PARK DONG WOO
+                        </span>
+                        GRAPHIC DESIGNER<br>
+                        e-mail coolbaby0904@hanmail.net<br>
+                        twitter @propaganda02
+                    </p>
+                </div>
+            </div>
+            <div class="stf_box">
+                <div class="stf">
+                    <img src="<?php echo G5_THEME_IMG_URL; ?>/lee.png" alt="이동형">
+                    <p class="stf_info">
+                        <span class="stf_name">
+                            LEE DONG HYOUNG
+                        </span>
+                        GRAPHIC DESIGNER<br>
+                        e-mail ldh6683@hanmail.net<br>
+                        twitter @papeeeee
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

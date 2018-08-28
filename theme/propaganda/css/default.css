@@ -164,8 +164,10 @@ textarea {resize: none}
 /*- staff -*/
 .staff {}
 
-.staff .stf {float: left;margin: 0 90px}
-.staff .stf img {}
+.staff .stf_co {}
+.staff .stf_co .stf_box {float: left;width: 33.333333%}
+.staff .stf_co .stf {margin: 0 7.5%}
+.staff .stf_co .stf img {display: block;margin: 0 auto}
 .stf .stf_info {margin-top: 40px;text-align: center;line-height: 21px;font-family: 'gotham_mediumregular'}
 .stf .stf_info .stf_name {display: block;margin-bottom: 14px;font-family: 'gotham_boldregular';font-size: 18px;color: #c0a062}
 
@@ -210,16 +212,24 @@ textarea {resize: none}
 
 /* RWD */
 /*- mobile_small -*/
-@media screen and (max-width: 479px;) {}
+@media screen and (max-width: 479px) {}
 
 /*- mobile_landscape -*/
-@media screen and (min-width: 640px;) {}
+@media screen and (min-width: 640px) {}
 
 /*- tablet -*/
-@media screen and (min-width: 760px;) {}
+@media screen and (max-width: 759px) {
+    .staff .stf_co .stf_box {float: left;width: 100%}
+    .staff .stf_co .stf {margin: 50px auto}
+}
+@media screen and (min-width: 760px) {}
 
 /*- desktop -*/
-@media screen and (min-width: 1200px;) {}
+@media screen and (max-width: 1199px) {
+    .pro_hd .ca {margin: 0 10px}
+
+}
+@media screen and (min-width: 1200px) {}
 
 
 /* SIR 지운아빠 */
