@@ -143,7 +143,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </h2>
         <span class="line contact_line"></span>
         <div id="map"></div>
-        <div class="contact_info_box">
+        <div class="contact_info_box clearfix">
             <dl class="contact_info">
                 <dt>ADRESS&#46;</dt>
                 <dd>
