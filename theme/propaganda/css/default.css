@@ -119,7 +119,6 @@ textarea {resize: none}
 
 /* layout */
 /* HEADER .pro_hd -----------------------------------*/
-#pro_header {position: relative}
 .pro_hd {z-index: 1000;position: fixed;top: 0;padding: 19px 0 18px;width: 100%;background: rgba(22, 22, 22, 0.95)}
 .pro_hd .ca {position: relative}
 
@@ -148,7 +147,7 @@ textarea {resize: none}
 .staff_line, .work_line, .contact_line {margin:19px auto 64px}
 
 /*- popup -*/
-.popup {z-index: 500;position: absolute;top: 100px;left: 40px;width: 300px;height: 300px;background-image: url(../img/popup_box.jpg)}	
+.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background-image: url(../img/popup_box.jpg)}	
 .btn_popup_close {position: absolute;right: 0;top: 0;width: 48px;height: 48px}
 
 /*- info -*/
@@ -181,11 +180,11 @@ textarea {resize: none}
 .contact {}
 .contact .ca {padding: 120px 10px 50px}
 .contact #map {margin-bottom: 60px;height: 360px}
-.contact .contact_info {float: left;width: 460px}
+.contact .contact_info_box {float: left;width: 580px}
 .contact_info dt {margin-bottom: 6px;font-family: 'gotham_boldregular';font-size: 18px}
 .contact_info dd {margin-bottom: 24px;line-height: 24px;font-family: 'nanumbarungothiclight'}
 
-.contact .formMail {float: right;width: 460px}
+.contact .formMail {float: right;width: 580px}
 .formMail p {margin-bottom: 10px;font-size: 16px;font-weight: bold}
 .formMail input, .formMail textarea {display: block;margin-bottom: 10px;padding: 10px;width: 100%;border: none;background: #e9e9e9}
 .formMail input {height: 40px}
@@ -194,15 +193,15 @@ textarea {resize: none}
 
 
 /* FOOTER .pro_ft -----------------------------------*/
-.pro_ft {height: 100px;font-family: 'gotham_mediumregular';color: #c0a062;background-color: #161616}
+.pro_ft {font-family: 'gotham_mediumregular';color: #c0a062;background-color: #161616}
 .pro_ft .ca {position: relative}
-.pro_ft .copyright {float: left;line-height: 100px}
+.pro_ft .copyright {padding: 44px 0}
 .pro_ft .fb-like {position: absolute;top: 40px;right: 80px}
 
-.pro_btn_top {float: right;display: block;width: 40px;height: 40px;background: url(../img/btn_top.jpg) 0 0 no-repeat}
-.pro_btn_top:hover {background: url(../img/btn_top_on.jpg) 0 0 no-repeat}
-
 .pro_validator {float: right;margin: 70px 40px 0 0}
+
+.pro_btn_top {position: absolute;top: 0;right: 0;display: block;width: 40px;height: 40px;background: url(../img/btn_top.jpg) 0 0 no-repeat}
+.pro_btn_top:hover {background: url(../img/btn_top_on.jpg) 0 0 no-repeat}
 
 /* etc -----------------------------------*/
 #sfl, #gr_id, #view {height: 24px;border: 1px solid #e4eaec} /* 검색 왼쪽에 있는 애 select */
@@ -215,10 +214,21 @@ textarea {resize: none}
 @media screen and (max-width: 479px) {}
 
 /*- mobile_landscape -*/
+@media screen and (max-width: 639px) {
+    .pro_ft .copyright {padding: 64px 0 24px}
+    .pro_ft .fb-like {top: 100px;left: 0}
+    .pro_validator {margin: 0;padding: 0 0 20px}
+}
 @media screen and (min-width: 640px) {}
 
 /*- tablet -*/
 @media screen and (max-width: 759px) {
+    .pro_hd .logo {float: none}
+
+    .gnb {float: none;width: 140px;margin: 0 auto;padding: 0}
+    .gnb .menu {float: left;padding: 12px 0 25px}
+    .gnb .menu a:hover:after {top: 46px}
+    
     .staff .stf_co .stf_box {float: left;width: 100%}
     .staff .stf_co .stf {margin: 50px auto}
 }
@@ -227,7 +237,11 @@ textarea {resize: none}
 /*- desktop -*/
 @media screen and (max-width: 1199px) {
     .pro_hd .ca {margin: 0 10px}
-
+    
+    .contact .contact_info_box {float: none;width: 100%}
+    .contact .formMail {float: none;width: 100%}
+    
+    .pro_ft .ca {margin: 0 10px}
 }
 @media screen and (min-width: 1200px) {}
 
