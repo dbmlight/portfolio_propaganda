@@ -198,7 +198,7 @@ textarea {resize: none}
 .pro_ft .copyright {padding: 44px 0}
 .pro_ft .fb-like {position: absolute;top: 40px;right: 80px}
 
-.pro_validator {float: right;margin: 70px 40px 0 0}
+.pro_validator {float: right;margin: 0 0 20px}
 
 .pro_btn_top {position: absolute;top: 0;right: 0;display: block;width: 40px;height: 40px;background: url(../img/btn_top.jpg) 0 0 no-repeat}
 .pro_btn_top:hover {background: url(../img/btn_top_on.jpg) 0 0 no-repeat}
@@ -211,15 +211,18 @@ textarea {resize: none}
 
 /* RWD */
 /*- mobile_small -*/
-@media screen and (max-width: 479px) {}
+@media screen and (max-width: 479px) {
+    .info .ca .info_box {margin-top: -92.53px;margin-left: -140.58px}
+    .info_logo img {width: 140px}
+    .info .info_line {margin: 20px 0}
+    .info_txt {font-size: 12px}
+}
 
 /*- mobile_landscape -*/
 @media screen and (max-width: 639px) {
     .pro_ft .copyright {padding: 64px 0 24px}
-    .pro_ft .fb-like {top: 100px;left: 0}
-    .pro_validator {margin: 0;padding: 0 0 20px}
+    .pro_ft .fb-like {top: 100px;left: 10px}
 }
-@media screen and (min-width: 640px) {}
 
 /*- tablet -*/
 @media screen and (max-width: 759px) {
@@ -232,18 +235,16 @@ textarea {resize: none}
     .staff .stf_co .stf_box {float: left;width: 100%}
     .staff .stf_co .stf {margin: 50px auto}
 }
-@media screen and (min-width: 760px) {}
 
 /*- desktop -*/
 @media screen and (max-width: 1199px) {
-    .pro_hd .ca {margin: 0 10px}
+    .pro_hd .ca, .pro_ft .ca {padding: 0 10px}
+    
+    .pro_hd #mn_btn, .pro_btn_top {right: 10px}
     
     .contact .contact_info_box {float: none;width: 100%}
     .contact .formMail {float: none;width: 100%}
-    
-    .pro_ft .ca {margin: 0 10px}
 }
-@media screen and (min-width: 1200px) {}
 
 
 /* SIR 지운아빠 */
