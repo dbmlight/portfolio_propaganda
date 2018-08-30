@@ -162,7 +162,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
         <div class="formMail">
             <p>메세지를 보내주세요&#40;&#42;필수입력&#41;</p>
-            <form method="post" action="form_mail.php">
+            <form method="post" action="<?php echo G5_THEME_URL; ?>/form_mail.php">
                 <fieldset>
                     <input type="text" placeholder="이름*" id="name" name="name" required="required">
                     <input type="email" placeholder="이메일*" id="email" name="email" required="required">
