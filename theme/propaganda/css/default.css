@@ -112,7 +112,7 @@ textarea {resize: none}
 
 /* common */
 .clearfix:after {display: block;clear: both;content: ''}
-.ca {max-width: 1200px;min-width: 320px;margin: 0 auto}
+.ca {max-width: 1200px;min-width: 360px;margin: 0 auto}
 .ir {text-indent: -9999px}
 .line {display: block;margin: 19px 0 64px;width: 140px;height: 6px;background: #161616}
 
@@ -147,7 +147,7 @@ textarea {resize: none}
 .staff_line, .work_line, .contact_line {margin:19px auto 64px}
 
 /*- popup -*/
-.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background: url(../img/popup_box.jpg) no-repeat}
+.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background-image: url(../img/popup_box.jpg)}	
 .btn_popup_close {position: absolute;right: 0;top: 0;width: 48px;height: 48px}
 
 /*- info -*/
@@ -193,7 +193,7 @@ textarea {resize: none}
 
 
 /* FOOTER .pro_ft -----------------------------------*/
-.pro_ft {margin: 10px 0 0;font-family: 'gotham_mediumregular';color: #c0a062;background-color: #161616}
+.pro_ft {font-family: 'gotham_mediumregular';color: #c0a062;background-color: #161616}
 .pro_ft .ca {position: relative}
 .pro_ft .copyright {padding: 44px 0}
 .pro_ft .fb-like {position: absolute;top: 40px;right: 80px}
@@ -212,14 +212,10 @@ textarea {resize: none}
 /* RWD */
 /*- mobile_small -*/
 @media screen and (max-width: 479px) {
-    .popup {width: 240px;height: 240px;background-size: 240px 240px}
-    
     .info .ca .info_box {margin-top: -92.53px;margin-left: -140.58px}
     .info_logo img {width: 140px}
     .info .info_line {margin: 20px 0}
     .info_txt {font-size: 12px}
-    
-    .pro_ft .copyright {font-size: 10px}
 }
 
 /*- mobile_landscape -*/
@@ -242,7 +238,7 @@ textarea {resize: none}
 
 /*- desktop -*/
 @media screen and (max-width: 1199px) {
-    .ca {padding: 0 10px}
+    .pro_hd .ca, .pro_ft .ca {padding: 0 10px}
     
     .pro_hd #mn_btn, .pro_btn_top {right: 10px}
     
