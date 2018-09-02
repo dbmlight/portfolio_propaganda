@@ -164,9 +164,9 @@ include_once(G5_THEME_PATH.'/head.php');
             <p>메세지를 보내주세요&#40;&#42;필수입력&#41;</p>
             <form method="post" action="<?php echo G5_THEME_URL; ?>/form_mail.php">
                 <fieldset>
-                    <input type="text" placeholder="이름*" id="name" name="name" required="required">
-                    <input type="email" placeholder="이메일*" id="email" name="email" required="required">
-                    <textarea placeholder="메세지*" name="content" id="content" required="required"></textarea>
+                    <input type="text" placeholder="이름 *" id="name" name="name" required="required">
+                    <input type="email" placeholder="이메일 *" id="email" name="email" required="required">
+                    <textarea placeholder="메세지 *" name="content" id="content" required="required"></textarea>
                     <input type="submit" value="SEND" name="submit" class="send_btn">
                 </fieldset>
             </form>
