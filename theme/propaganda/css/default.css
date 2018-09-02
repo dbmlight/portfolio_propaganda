@@ -106,8 +106,9 @@ textarea {resize: none}
 
 /* etc -----------------------------------*/
 #sfl, #gr_id, #view {height: 24px;border: 1px solid #e4eaec} /* 검색 왼쪽에 있는 애 select */
-#bo_list_total {margin-bottom: 11px} /* Total n건 n페이지 */
 #secret, #wr_secret, #notice, #chkall, #gall_ul input, .td_chk input {-webkit-appearance: checkbox}
+#bo_list tbody {position: relative}
+#bo_list tbody tr:hover:after {content: '';position: absolute;left: 0;width: 2px;height: 60px;background-color: #c0a062}
 
 
 /* RWD */
@@ -139,6 +140,9 @@ textarea {resize: none}
     
     .staff .stf_co .stf_box {float: left;width: 100%}
     .staff .stf_co .stf {margin: 50px auto}
+    
+    .tbl_head01 thead th {display: none}
+    #bo_list .td_num2 {display: none}
 }
 
 /*- desktop -*/
@@ -402,7 +406,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
 #bo_v_con li{display: list-item;}
 
 /* 버튼 */
-a.btn,.btn{line-height:35px;height:35px;padding:0 10px;text-align:center;font-weight:bold;border:0;
+a.btn,.btn{line-height: 40px;width: 80px;height: 40px;text-align:center;font-weight:bold;border:0;
 -webkit-transition: background-color 0.3s ease-out;
 -moz-transition: background-color 0.3s ease-out;
 -o-transition: background-color 0.3s ease-out;
@@ -427,8 +431,8 @@ button.btn_frmline {font-size:1em}
 /* 게시판용 버튼 */
 a.btn_b01,.btn_b01 {display:inline-block;background:#4c4f6f;color:#fff;text-decoration:none;vertical-align:middle}
 .btn_b01:hover, .btn_b01:hover {background:#54598c}
-a.btn_b02,.btn_b02 {display:inline-block;background:#253dbe;padding:0 10px;color:#fff;text-decoration:none;border:0;vertical-align:middle;}
-a.btn_b02:hover, .btn_b02:hover {background:#0025eb}
+a.btn_b02,.btn_b02 {display:inline-block;background: #161616;color: #c0a062;text-decoration:none;border:0;vertical-align:middle;}
+a.btn_b02:hover, .btn_b02:hover {background: #c0a062;color: #161616}
 a.btn_b03, .btn_b03 {display:inline-block;background:#fff;border:1px solid #b9bdd3;color:#646982;text-decoration:none;vertical-align:middle}
 a.btn_b03:hover, .btn_b03:hover {background:#ebedf6}
 a.btn_b04, .btn_b04 {display:inline-block;background:#fff;border:1px solid #ccc;color:#707070;text-decoration:none;vertical-align:middle}
@@ -443,11 +447,11 @@ a.btn_admin,.btn_admin {display:inline-block;background:#d13f4a;color:#fff;text-
 .color_4 {background:#7520c5}
 
 /* 기본테이블 */
-.tbl_wrap table {width:100%;border-collapse:collapse;border-spacing: 0 5px;border:1px solid #ccc;} 
+.tbl_wrap table {width:100%;border-collapse:collapse;border-spacing: 0 5px} 
 .tbl_wrap caption {padding:10px 0;font-weight:bold;text-align:left}
 .tbl_head01 {margin:0 0 10px}
 .tbl_head01 caption {padding:0;font-size:0;line-height:0;overflow:hidden}
-.tbl_head01 thead th {padding:10px 0;font-weight:normal;text-align:center;border-bottom:1px solid #ddd;background:#fafafa;height:40px}
+.tbl_head01 thead th {padding:10px 0;text-align:center;background: #c0a062;height: 50px}
 .tbl_head01 thead th input {vertical-align:top} /* middle 로 하면 게시판 읽기에서 목록 사용시 체크박스 라인 깨짐 */
 .tbl_head01 tfoot th, .tbl_head01 tfoot td {padding:10px 0;border-top:1px solid #c1d1d5;border-bottom:1px solid #c1d1d5;background:#d7e0e2;text-align:center}
 .tbl_head01 tbody th {padding:8px 0;border-bottom:1px solid #e8e8e8}
