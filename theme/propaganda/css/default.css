@@ -141,8 +141,12 @@ textarea {resize: none}
     .staff .stf_co .stf_box {float: left;width: 100%}
     .staff .stf_co .stf {margin: 50px auto}
     
+    /* board */
     .tbl_head01 thead th {display: none}
-    #bo_list .td_num2 {display: none}
+    
+    /*- board style.css -*/
+    #bo_list .td_num2, #bo_list tbody tr:hover:after, #bo_list .td_num {display: none}
+    .td_subject {padding-left: 10px !important}
 }
 
 /*- desktop -*/
