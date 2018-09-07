@@ -5,7 +5,7 @@
 @media screen and (max-width: 759px) {
     #bo_list .tbl_head01 thead th, #bo_list tbody tr:hover:after, #bo_list .td_num, #bo_list .td_num2 {display: none}
     
-    #bo_list .tbl_head01 table tbody tr {margin-bottom: 10px}
+    #bo_list .tbl_head01 table tbody tr {border-bottom: 1px solid #eee}
     #bo_list .tbl_head01 table tbody tr:hover {background:#fafafa}
     
     .tbl_head01 table tbody tr:after {display: block;clear: both;content: ''}
@@ -13,9 +13,17 @@
     #bo_list .tbl_head01 td {height: 100%;border: none}
     
     #bo_list .tbl_head01 .bo_notice {background: #eee}
-    #bo_list .tbl_head01 .td_subject {float: left;width: 100%;padding-left: 10px}
-    #bo_list .tbl_head01 .td_name {float: left;padding: 10px;text-align: left}
-    #bo_list .tbl_head01 .td_datetime {float: right;padding: 10px;text-align: right}
+    #bo_list .tbl_head01 .td_subject {float: left;width: 100%;padding-left: 10px;padding-bottom: 0}
+    #bo_list .tbl_head01 .td_name {float: left;padding: 0 10px 10px;height: 30px;line-height: 20px;text-align: left}
+    #bo_list .tbl_head01 .td_datetime {float: right;padding: 0 10px 10px;height: 30px;line-height: 20px;text-align: right}
+    
+    .bo_fx, .bo_fx ul.btn_bo_user, .bo_fx ul.btn_bo_user li, .bo_fx ul.btn_bo_user li a {width: 100%}
+    #fboardlist .bo_fx {margin-bottom: 10px}
+    
+    #bo_list #bo_sch {float: none;position: relative}
+    #bo_sch select{width: 30%;padding-left: 10px}
+    #bo_sch .sch_input{padding: 0 40px 0 10px;width: 70%}
+    #bo_sch .sch_btn{position: absolute;top: 0;right: 0}
     
     #bo_v #bo_v_top .bo_v_nb li a {display: inline-block;width: 50%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
 }
@@ -59,7 +67,7 @@
 #bo_list .tbl_head01 tfoot td {}
 #bo_list .tbl_head01 tbody th {}
 #bo_list .tbl_head01 td {}
-#bo_list .tbl_head01 a {}
+#bo_list .tbl_head01 a {display: inline-block;width: 100%;height: 100%;line-height: 40px}
 #bo_list td.empty_table {}
 
 /* 읽기 내 테이블 */
@@ -148,7 +156,7 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 #bo_list_total {float:left;line-height:30px;font-size:0.92em;color:#4e546f;background:#d4d4d4;padding:0 10px;border-radius:5px;}
 
 .btn_bo_user {float:right;margin:0;padding:0;list-style:none}
-.btn_bo_user li {float:left;margin-left:5px}
+.btn_bo_user li {float:left}
 .btn_bo_adm {float:left}
 .btn_bo_adm li {float:left;margin-right:5px}
 .btn_bo_adm input {padding:0 8px;border:0;background:#d4d4d4;color:#666;text-decoration:none;vertical-align:middle}
