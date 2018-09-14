@@ -47,7 +47,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
         </ul>
     </div>
     <div id="hd_wrapper">
-        <div id="logo"><a href="<?php echo G5_SHOP_URL; ?>/"><img src="<?php echo G5_DATA_URL; ?>/common/logo_img" alt="<?php echo $config['cf_title']; ?>"></a></div>
+        <div id="logo"><a href="<?php echo G5_SHOP_URL; ?>/"><img src="<?php echo G5_THEME_IMG_URL; ?>/pro_logo.png" alt="<?php echo $config['cf_title']; ?>"></a></div>
 
         <div id="hd_sch">
             <h3>쇼핑몰 검색</h3>
