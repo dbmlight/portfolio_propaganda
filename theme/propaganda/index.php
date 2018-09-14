@@ -98,34 +98,25 @@ include_once(G5_THEME_PATH.'/head.php');
         </h2>
         <span class="line work_line"></span>
         <?php
-        # 그룹 기준
-        $gr_where_sql =  "a.bo_device <> 'mobile' ";
-        $gr_where_sql .= "and a.bo_list_level <= '{$member['mb_level']}' "; # 회원레벨에 따른 출력제한
-        // $gr_where_sql .= "and a.bo_order != '0' "; # 게시판 출력순서 0  제외
-        $gr_where_sql .= "and a.bo_use_search != '0' "; # 검색 미사용 제외
-        $gr_where_sql .= "and b.gr_id not in ('admin','03','05') "; # 그룹 제외	'05', '06'...
-        $gr_where_sql .= "and a.bo_table not in ('BOARD') "; #  테이블 제외 'notice', 'tbname'
-        $gr_order .= " b.gr_order, "; # 그룹 출력순서에 따른 정렬 우선
-        $sql = " select bo_table from `{$g5['board_table']}` a left join `{$g5['group_table']}` b on (a.gr_id=b.gr_id)  where $gr_where_sql order by $gr_order a.bo_order ";
-
-        // 테이블 기준
-        /*
-        $tb_where_sql =  "bo_device <> 'mobile' ";
-        $tb_where_sql .= "and bo_list_level <= '{$member['mb_level']}' "; # 회원레벨에 따른 출력제한
-        $tb_where_sql .= "and bo_order != '0' "; # 게시판 출력순서 0 출력 제외
-        $tb_where_sql .= "and bo_table not in ('notice') "; # 제외 테이블  'notice', 'tbname'
-        $sql = " select bo_table, bo_subject from {$g5[board_table]} where $tb_where_sql order by bo_order ";
-        */
+        //  최신글
+        $sql = " select bo_table
+                    from `{$g5['board_table']}` a left join `{$g5['group_table']}` b on (a.gr_id=b.gr_id)
+                    where a.bo_device <> 'mobile' ";
+        if(!$is_admin)
+            $sql .= " and a.bo_use_cert = '' ";
+        $sql .= " and a.bo_table not in ('BOARD') ";     //공지사항과 갤러리 게시판은 제외
+        $sql .= " order by b.gr_order, a.bo_order ";
         $result = sql_query($sql);
         for ($i=0; $row=sql_fetch_array($result); $i++) {
-            if ($i%2==1) $lt_style = "margin-left:20px";
+            if ($i%2==1) $lt_style = "margin-left:2%";
             else $lt_style = "";
         ?>
-        <div style="float:left;<?php echo $lt_style ?>">
+        <div style="float:left;<?php echo $lt_style ?>" class="pro_lt_wr">
             <?php
             // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
             // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-            echo latest("theme/pro_basic", $row['bo_table'], 12, 0);
+            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+            echo latest('theme/pro_l_work', $row['bo_table'], 4, 24);
             ?>
         </div>
         <?php
