@@ -22,13 +22,7 @@ $thumb_height = 400;
 				$(".cover", this).stop().animate({top:'<?php echo $thumb_height?>px'},{queue:false,duration:160});		
 				//Full Caption Sliding (Hidden to Visible)
 				$('.boxgrid.captionfull').hover(function(){
-					$(".cover", this).stop().animate({top:'<?php echo $thumb_height-100?>px'},{queue:false,duration:160});					
-				}, function() {
-					$(".cover", this).stop().animate({top:'<?php echo $thumb_height?>px'},{queue:false,duration:160});
-				});
-				//Caption Sliding (Partially Hidden to Visible)
-				$('.boxgrid.caption').hover(function(){
-					$(".cover", this).stop().animate({top:'<?php echo $thumb_height-100?>px'},{queue:false,duration:160});
+					$(".cover", this).stop().animate({top:'<?php echo $thumb_height-$thumb_height?>px'},{queue:false,duration:160});					
 				}, function() {
 					$(".cover", this).stop().animate({top:'<?php echo $thumb_height?>px'},{queue:false,duration:160});
 				});
@@ -46,16 +40,16 @@ for ($i=0; $i<count($list); $i++) {
 		$thumb_url = $latest_skin_url."/img/no-image.gif";
 	}
 ?>
-			<div class="boxgrid captionfull">
-				<img src="<?php echo $thumb['src']?>" alt="" />
-				<div class="cover boxcaption">
-					<h3><?php echo $list[$i]['subject']; ?></h3>
-					<p><?php echo cut_str(strip_tags($list[$i]['wr_content']),22); ?><br/>
-					<a href="<?php echo $list[$i]['href']?>">More</a></p>
-				</div>		
+            <div class="boxgrid_wrap">
+                <div class="boxgrid captionfull">
+                    <img src="<?php echo $thumb['src']?>" alt="">
+                    <div class="cover boxcaption">
+                        <a href="<?php echo $list[$i]['href']?>"><?php echo $list[$i]['subject']; ?></a>
+                    </div>
+                </div>
 			</div>
-	
-<?php	}	?>		
+			
+<?php	}	?>
 
 <div style="clear:both"></div>
 

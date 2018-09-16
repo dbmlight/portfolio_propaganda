@@ -1,49 +1,38 @@
-.boxgrid {
-	width: 280px;
-	height: 400px;
-	margin: 10px;
-	float: left;
-	background: #161613;
-	overflow: hidden;
-	position: relative
-}
-.boxgrid img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	border: 0
-}
-.boxgrid p {
-	padding: 0 10px;
-	color: #afafaf;
-	font-weight: bold;
-	font: 10pt "Lucida Grande", Arial, sans-serif
-}
+.lt_wr {float: none !important;width: 100%}
+
+.boxgrid_wrap {float: left;width: 25%;height: 100%}
+.boxgrid_wrap .boxgrid {position: relative;overflow: hidden;margin: 10px}
+.boxgrid img {width: 100%}
+
 .boxcaption {
-	float: left;
 	position: absolute;
-	background: #000;
-	height: 100px;
 	width: 100%;
-	opacity: .8;
+	height: 100%;
+    background: #000;
+	opacity: 0.8;
 	/* For IE 5-7 */
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 	/* For IE 8 */
 	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"
 }
-.captionfull .boxcaption {
-	top: 0;
-	left: 0
-}
-.caption .boxcaption {
-	top: 220;
-	left: 0
-}
+.boxcaption a {display: block;text-align: center;line-height: 400px;color: #fff}
 
-.boxcaption h3 {
-	padding: 0px 10px;
-	color: #fff
-}
-.boxcaption p a {
-	color: #58FAF4
-}
+.captionfull .boxcaption {top: 0;left: 0}
+
+
+/* RWD */
+/*- mobile_small -*/
+@media screen and (max-width: 479px) {}
+
+/*- mobile_landscape -*/
+@media screen and (max-width: 639px) {}
+
+/*- tablet -*/
+@media screen and (max-width: 759px) {}
+
+/*- desktop -*/
+@media screen and (max-width: 1199px) {}
+
+
+
+
