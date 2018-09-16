@@ -1,6 +1,6 @@
-.lt_wr {float: none !important;width: 100%}
+.lt_wr {width: 100%;margin: 0 auto}
 
-.boxgrid_wrap {float: left;width: 25%;height: 100%}
+.boxgrid_wrap {float: left}
 .boxgrid_wrap .boxgrid {position: relative;overflow: hidden;margin: 10px}
 .boxgrid img {width: 100%}
 
@@ -9,11 +9,11 @@
 	width: 100%;
 	height: 100%;
     background: #000;
-	opacity: 0.8;
+	opacity: 0.5;
 	/* For IE 5-7 */
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 	/* For IE 8 */
-	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
 }
 .boxcaption a {display: block;text-align: center;line-height: 400px;color: #fff}
 
@@ -21,17 +21,19 @@
 
 
 /* RWD */
-/*- mobile_small -*/
-@media screen and (max-width: 479px) {}
-
-/*- mobile_landscape -*/
-@media screen and (max-width: 639px) {}
-
-/*- tablet -*/
-@media screen and (max-width: 759px) {}
-
-/*- desktop -*/
-@media screen and (max-width: 1199px) {}
+/*- lt_wr -*/
+@media screen and (max-width: 1199px) {
+    .lt_wr{width: 900px}
+}
+@media screen and (max-width: 1199px) {
+    .lt_wr{width: 900px}
+}
+@media screen and (max-width: 899px) {
+    .lt_wr{width: 600px}
+}
+@media screen and (max-width: 599px) {
+    .lt_wr{width: 300px}
+}
 
 
 

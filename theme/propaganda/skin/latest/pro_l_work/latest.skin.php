@@ -44,7 +44,7 @@ for ($i=0; $i<count($list); $i++) {
                 <div class="boxgrid captionfull">
                     <img src="<?php echo $thumb['src']?>" alt="">
                     <div class="cover boxcaption">
-                        <a href="<?php echo $list[$i]['href']?>"><?php echo $list[$i]['subject']; ?></a>
+                        <a href="<?php echo $list[$i]['href']?>"></a>
                     </div>
                 </div>
 			</div>
