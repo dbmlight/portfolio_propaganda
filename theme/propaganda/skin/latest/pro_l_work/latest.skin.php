@@ -8,30 +8,17 @@ $thumb_height = 400;
 
 /*
 프로젝트명 : 시즌10' CREATE GNUBOARD SKIN
-스킨튜닝개발자 : 흑횽TM 
+스킨튜닝개발자 : 흑횽TM -DEAN 수정-
 개발자사이트주소 : http://shoponex.com/?theme=skin
-라이선스 : 오픈소스 플러그인 라이선스 참고. 
+라이선스 : 오픈소스 플러그인 라이선스 참고.
 기타 라이선스 : 그누보드 사이트 (sir.kr)를 제외한 타 사이트에서 재배포 금지.
 */
 
 ?>
 
 
-<script type="text/javascript">
-			$(document).ready(function(){
-				$(".cover", this).stop().animate({top:'<?php echo $thumb_height?>px'},{queue:false,duration:160});		
-				//Full Caption Sliding (Hidden to Visible)
-				$('.boxgrid.captionfull').hover(function(){
-					$(".cover", this).stop().animate({top:'<?php echo $thumb_height-$thumb_height?>px'},{queue:false,duration:160});					
-				}, function() {
-					$(".cover", this).stop().animate({top:'<?php echo $thumb_height?>px'},{queue:false,duration:160});
-				});
-			});
-</script>
-
-
 <?php
-for ($i=0; $i<count($list); $i++) {	
+for ($i=0; $i<count($list); $i++) {
 	$thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height);
 
 	if($thumb['src']) {
