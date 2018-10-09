@@ -43,7 +43,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=BOARD">BOARD</a>
             </li>
             <li class="menu mn_store">
-                <a href="<?php echo G5_SHOP_URL; ?>">STORE</a>
+                <a href="<?php echo G5_THEME_IMG_URL; ?>/PROPAGANDA_STORE_Desktop.jpg">STORE</a>
             </li>
         </ul>
     </div>
