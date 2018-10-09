@@ -75,6 +75,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <div class="gall_con">
                     <div class="gall_img">
                         <a href="<?php echo $list[$i]['href'] ?>">
+                        <span class="gall_img_h_box"></span>
                         <?php
                         if ($list[$i]['is_notice']) { // 공지사항  ?>
                             <span class="is_notice">공지</span>
@@ -82,7 +83,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_gallery_width'], $board['bo_gallery_height'], false, true);
 
                             if($thumb['src']) {
-                                $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" >';
+                                $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="100%">';
                             } else {
                                 $img_content = '<span class="no_image">no image</span>';
                             }

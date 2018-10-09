@@ -197,10 +197,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </div>
     <!-- } 게시물 상단 버튼 끝 -->
 
-    <?php
-    // 코멘트 입출력
-    include_once(G5_BBS_PATH.'/view_comment.php');
-     ?>
+    
 
 
 </article>
