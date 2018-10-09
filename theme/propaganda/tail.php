@@ -11,6 +11,7 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 ?>
+</div><!-- .pro_container .ca end -->
 </div><!-- .pro_container end -->
 <!-- } 콘텐츠 끝 -->
 <!-- 하단 시작 { -->

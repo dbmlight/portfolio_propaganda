@@ -64,6 +64,7 @@ function initMap() {
 	js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.6";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk')); //facebook API
+
 $('.pro_btn_top').on('click', function(e) {
 	e.preventDefault()
 	$('html, body').stop().animate({

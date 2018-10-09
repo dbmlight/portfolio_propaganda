@@ -12,7 +12,7 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 
-include_once(G5_THEME_PATH.'/head.php');
+include_once(G5_THEME_PATH.'/head2.php');
 ?>
 
 <!-- popup 시작 { -->
@@ -168,5 +168,5 @@ include_once(G5_THEME_PATH.'/head.php');
 <!-- } contact 끝 -->
 
 <?php
-include_once(G5_THEME_PATH.'/tail.php');
+include_once(G5_THEME_PATH.'/tail2.php');
 ?>
