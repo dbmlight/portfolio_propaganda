@@ -20,7 +20,14 @@ textarea {resize: none}
 
 /* layout */
 /* HEADER .pro_hd -----------------------------------*/
-.pro_hd {z-index: 1000;position: fixed;top: 0;padding: 19px 0 18px;width: 100%;background: rgba(22, 22, 22, 0.95)}
+.pro_hd {z-index: 1000;position: fixed;top: 0;padding: 19px 0 18px;width: 100%;
+    background: #161616;
+	opacity: 0.95;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"
+}
 .pro_hd .ca {position: relative}
 
 .pro_hd .logo {float: left}
