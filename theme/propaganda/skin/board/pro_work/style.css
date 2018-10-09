@@ -163,7 +163,7 @@
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_cate li {display:inline-block;margin: 0 0 16px}
 #bo_cate a {display:block;line-height:26px;padding:0 10px;font-family: 'gotham_blackregular';font-size: 16px}
-#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none;color: #eee}
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none;color: #fff}
 #bo_cate #bo_cate_on {z-index:2;color: #c0a062}
 
 .td_subject img {margin-left:3px}
