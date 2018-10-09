@@ -122,6 +122,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <?php
         }
         ?>
+        <div class="work_more"><a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=WORK">MORE+</a></div>
     </div>
 </div>
 <!-- } 최신글 끝 -->

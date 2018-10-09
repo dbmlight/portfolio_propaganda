@@ -48,16 +48,16 @@ textarea {resize: none}
 .staff_line, .work_line, .contact_line {margin:19px auto 64px}
 
 /*- popup -*/
-.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background: url(../img/popup_box.jpg) no-repeat}
+.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background: url(../img/popup_box.jpg) no-repeat;background-size: 300px 300px}
 .btn_popup_close {position: absolute;right: 0;top: 0;width: 48px;height: 48px}
 
 /*- info -*/
 .info {background: #161616;padding-top: 80px}
 .info .ca {position: relative;height: 100%}
 
-.info .ca .info_box {position: absolute;top: 50%;left: 50%;margin-top: -118px;margin-left: -150px}
+.info .ca .info_box {position: absolute;top: 50%;left: 50%;margin-top: -118.65px;margin-left: -162.85px}
 .info .info_logo {}
-.info .info_logo img {}
+.info .info_logo img {width: 300px}
 .info .info_line {margin: 32px 0 28px;background: #c0a062}
 .info_txt {font-size: 14px;line-height: 28px;color: #c0a062}
 
@@ -75,6 +75,8 @@ textarea {resize: none}
 .work {background: #eeeeee}
 .work h2 {color: #c0a062}
 .work_line {margin-bottom: 54px;background: #c0a062}
+.work_more {margin: 30px auto 0;text-align: center;font-size: 16px;font-family: 'gotham_boldregular'}
+.work_more a:hover {color: #c0a062}
 
 /*- contact -*/
 .contact {}
@@ -116,7 +118,7 @@ textarea {resize: none}
     .popup {width: 240px;height: 240px;background-size: 240px 240px}
     
     .info .ca .info_box {margin-top: -92.53px;margin-left: -140.58px}
-    .info_logo img {width: 140px}
+    .info .info_logo img {width: 140px}
     .info .info_line {margin: 20px 0}
     .info_txt {font-size: 12px}
     
@@ -371,7 +373,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {display:inline-block;position:relative}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden;}
-#captcha #captcha_img {height:40px;border:1px solid #898989;vertical-align:top;padding:0;margin:0}
+#captcha #captcha_img {height:40px;border:1px solid #898989;vertical-align:top;padding:0;margin: 0 0 10px 0}
 #captcha #captcha_mp3 {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha2.png') no-repeat;text-indent:-999px}
 #captcha #captcha_reload {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha2.png') no-repeat  0 -40px;text-indent:-999px}
 #captcha #captcha_key {margin: 0 10px;padding:0 5px;width:90px;height:40px;border:1px solid #ccc;background:#fff;font-size:1.333em;font-weight:bold;text-align:center;vertical-align:top}
