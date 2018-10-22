@@ -93,9 +93,7 @@ include_once(G5_THEME_PATH.'/head2.php');
 <!-- 최신글 시작 { -->
 <div class="work pro_latest clearfix">
     <div class="ca">
-        <h2>
-            OUR WORK
-        </h2>
+        <h2>OUR WORK</h2>
         <span class="line work_line"></span>
         <?php
         //  최신글
@@ -130,9 +128,7 @@ include_once(G5_THEME_PATH.'/head2.php');
 <!-- contact 시작 { -->
 <div class="contact">
     <div class="ca clearfix">
-        <h2>
-            CONTACT
-        </h2>
+        <h2>CONTACT</h2>
         <span class="line contact_line"></span>
         <div id="map"></div>
         <div class="contact_info_box clearfix">

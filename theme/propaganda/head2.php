@@ -19,13 +19,11 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
-<!-- dean_상단 시작 { -->
+<!-- 상단 시작 { -->
 <header class="pro_hd">
     <div class="ca clearfix">
         <h1 class="logo">
-            <a href="<?php echo G5_URL ?>" class="ir">
-                PROPAGANDA
-            </a>
+            <a href="<?php echo G5_URL ?>" class="ir">PROPAGANDA</a>
         </h1>
         <div id="mn_btn">
             <a href="#" class="mn_opn">
