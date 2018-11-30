@@ -23,6 +23,7 @@ if(G5_COMMUNITY_USE === false) {
                 <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
             </a>
         </p>
+        <img class="nf" src="<?php echo G5_THEME_IMG_URL; ?>/NETFLIX.jpg" alt="netflix">
         <a href="#" class="ir pro_btn_top">상단으로</a>
     </div>
 </footer>

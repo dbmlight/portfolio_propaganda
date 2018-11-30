@@ -109,6 +109,8 @@ textarea {resize: none}
 
 .pro_validator {float: right;margin: 0 0 20px}
 
+.pro_ft img.nf {float: right;margin: 0 10px 10px 0}
+
 .pro_btn_top {position: absolute;top: 0;right: 0;display: block;width: 40px;height: 40px;background: url(../img/btn_top.jpg) 0 0 no-repeat}
 .pro_btn_top:hover {background: url(../img/btn_top_on.jpg) 0 0 no-repeat}
 
