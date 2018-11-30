@@ -74,8 +74,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 </div>
                 <div class="gall_con">
                     <div class="gall_img">
-                        <a href="<?php echo $list[$i]['href'] ?>">
-                        <span class="gall_img_h_box"></span>
                         <?php
                         if ($list[$i]['is_notice']) { // 공지사항  ?>
                             <span class="is_notice">공지</span>
@@ -91,7 +89,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             echo $img_content;
                         }
                          ?>
-                        </a>
+                         <div class="gall_img_h_box">
+                             <a href="<?php echo $list[$i]['href'] ?>"></a>
+                         </div>
                     </div>
                 </div>
             </div>
