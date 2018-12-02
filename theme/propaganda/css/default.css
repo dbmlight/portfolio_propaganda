@@ -20,8 +20,7 @@ textarea {resize: none}
 
 /* layout */
 /* HEADER .pro_hd -----------------------------------*/
-.pro_hd {z-index: 1000;position: fixed;top: 0;padding: 19px 0 18px;width: 100%;
-    background: #161616;
+.pro_hd {z-index: 3000;position: fixed;top: 0;padding: 19px 0 18px;width: 100%;background: #161616;
 	opacity: 0.95;
 	/* For IE 5-7 */
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
@@ -55,18 +54,34 @@ textarea {resize: none}
 .staff_line, .work_line, .contact_line {margin:19px auto 64px}
 
 /*- popup -*/
-.popup {z-index: 500;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background: url(../img/popup_box.jpg) no-repeat;background-size: 300px 300px}
+.popup {z-index: 2000;position: absolute;top: 120px;left: 40px;width: 300px;height: 300px;background: url(../img/popup_box.jpg) no-repeat;background-size: 300px 300px}
 .btn_popup_close {position: absolute;right: 0;top: 0;width: 48px;height: 48px}
 
 /*- info -*/
-.info {background: #161616;padding-top: 80px}
-.info .ca {position: relative;height: 100%}
+.info {}
+.info .ca {position: relative;max-width: none;width: 100%;height: 100%}
 
-.info .ca .info_box {position: absolute;top: 50%;left: 50%;margin-top: -118.65px;margin-left: -162.85px}
+.info .ca .info_txt_box {z-index: 1000;position: absolute;top: 50%;left: 50%;margin-top: -78.65px;margin-left: -162.85px}
 .info .info_logo {}
 .info .info_logo img {width: 300px}
 .info .info_line {margin: 32px 0 28px;background: #c0a062}
 .info_txt {font-size: 14px;line-height: 28px;color: #c0a062}
+
+.info_op_box {z-index: 100;position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: #000;
+    opacity: 0.8;
+    /* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"
+}
+
+/*----- Swiper -----*/
+.swiper-container {width: 100%;height: 100%}
+.swiper-slide {}
+.swiper-slide.slide1 {background: url(../img/info_bg1.jpg);background-position: center;background-size: cover}
+.swiper-slide.slide2 {background: url(../img/info_bg2.jpg);background-position: center;background-size: cover}
+.swiper-slide.slide3 {background: url(../img/info_bg3.jpg);background-position: center;background-size: cover}
+.swiper-slide.slide4 {background: url(../img/info_bg4.jpg);background-position: center;background-size: cover}
 
 /*- staff -*/
 .staff {}
@@ -107,9 +122,9 @@ textarea {resize: none}
 .pro_ft .copyright {padding: 44px 0}
 .pro_ft .fb-like {position: absolute;top: 40px;right: 80px}
 
-.pro_validator {float: right;margin: 0 0 20px}
-
-.pro_ft img.nf {float: right;margin: 0 10px 10px 0}
+.pro_ft_r {float: right}
+.pro_ft_r img.npca {width: 100px;margin: 0 0 10px 0}
+.pro_ft_r .pro_validator {margin: 0 0 20px}
 
 .pro_btn_top {position: absolute;top: 0;right: 0;display: block;width: 40px;height: 40px;background: url(../img/btn_top.jpg) 0 0 no-repeat}
 .pro_btn_top:hover {background: url(../img/btn_top_on.jpg) 0 0 no-repeat}
@@ -126,7 +141,7 @@ textarea {resize: none}
 @media screen and (max-width: 479px) {
     .popup {width: 240px;height: 240px;background-size: 240px 240px}
     
-    .info .ca .info_box {margin-top: -92.53px;margin-left: -140.58px}
+    .info .ca .info_txt_box {margin-top: -52.53px;margin-left: -140.58px}
     .info .info_logo img {width: 140px}
     .info .info_line {margin: 20px 0}
     .info_txt {font-size: 12px}
@@ -158,6 +173,8 @@ textarea {resize: none}
     
     .pro_hd #mn_btn, .pro_btn_top {right: 10px}
     
+    .info .ca {padding: 0}
+    
     .contact .contact_info_box {float: none;width: 100%}
     .contact .formMail {float: none;width: 100%}
 }
@@ -166,8 +183,8 @@ textarea {resize: none}
 /* SIR 지운아빠 */
 
 /* 초기화 */
-html {overflow-y:scroll}
-body {margin:0;padding:0;font-size:0.75em;font-family: 'nanumbarungothicregular', 'Malgun Gothic', dotum, sans-serif}
+html {height: 100%;overflow-x: hidden}
+body {margin:0;padding:0;height: 100%;font-size:0.75em;font-family: 'nanumbarungothicregular', 'Malgun Gothic', dotum, sans-serif}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6 {font-size:1em;font-family: 'nanumbarungothicregular', 'Malgun Gothic', dotum, sans-serif}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}

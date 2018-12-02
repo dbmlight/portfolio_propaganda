@@ -44,6 +44,7 @@ $shop_css = '';
 if (defined('_SHOP_')) $shop_css = '_shop';
 echo '<link rel="stylesheet" href="'.G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE?'mobile':'default').$shop_css.'.css?ver='.G5_CSS_VER.'">'.PHP_EOL;
 ?>
+<link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL ?>/swiper.min.css">
 <!--[if lt IE 9]>
 <script src="<?php echo G5_THEME_JS_URL ?>/respond.min.js"></script>
 <![endif]-->

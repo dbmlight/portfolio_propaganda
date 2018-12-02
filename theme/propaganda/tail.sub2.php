@@ -19,8 +19,18 @@ $(function() {
 });
 </script>
 <![endif]-->
-<script src="<?php echo G5_THEME_JS_URL ?>/pro.js"></script>
+<script src="<?php echo G5_THEME_JS_URL ?>/swiper.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4hXqBcikIKk1LGdRPZ_DXySoNfxJFcFE&callback=initMap"></script>
+<script src="<?php echo G5_THEME_JS_URL ?>/pro.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    speed: 2000,
+	autoplay: {
+		delay: 4000,
+	},
+	effect: 'fade',
+}); //Swiper
+</script>
 </body>
 </html>
 <?php echo html_end(); // HTML 마지막 처리 함수 : 반드시 넣어주시기 바랍니다. ?>

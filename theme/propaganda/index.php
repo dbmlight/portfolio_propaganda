@@ -24,7 +24,7 @@ include_once(G5_THEME_PATH.'/head2.php');
 <!-- info 시작 { -->
 <div class="info">
     <div class="ca">
-        <div class="info_box">
+        <div class="info_txt_box">
             <h1 class="info_logo">
                 <img src="<?php echo G5_THEME_IMG_URL; ?>/info_logo.png" alt="프로파간다">
             </h1>
@@ -35,6 +35,18 @@ include_once(G5_THEME_PATH.'/head2.php');
                 프로파간다는 클라이언트의 만족은 물론<br>
                 우리의 크리에이티브 열정을 표현하기 위해 디자인을 합니다.
             </p>
+        </div>
+        <div class="info_op_box"></div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+            </div>
         </div>
     </div>
 </div>
