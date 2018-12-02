@@ -17,7 +17,7 @@ if(G5_COMMUNITY_USE === false) {
 <!-- 하단 시작 { -->
 <footer class="pro_ft">
     <div class="ca clearfix">
-        <div class="copyright">Copyright (c) 2009 PROPAGANDA. All rights reserved.</div>
+        <div class="copyright">Copyright (c) 2018 PROPAGANDA. All rights reserved.</div>
         <div class="fb-like" data-href="https://www.facebook.com/PropagandaGraphics" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
         <div class="pro_ft_r">
             <img class="npca" src="<?php echo G5_THEME_IMG_URL; ?>/NPCA_Simple_Logo_RGB.jpg" alt="netflix">

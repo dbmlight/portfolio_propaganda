@@ -16,14 +16,16 @@ if(G5_COMMUNITY_USE === false) {
 <!-- 하단 시작 { -->
 <footer class="pro_ft">
     <div class="ca clearfix">
-        <div class="copyright">Copyright (c) 2009 PROPAGANDA. All rights reserved.</div>
+        <div class="copyright">Copyright (c) 2018 PROPAGANDA. All rights reserved.</div>
         <div class="fb-like" data-href="https://www.facebook.com/PropagandaGraphics" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-        <p class="pro_validator">
-            <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
-                <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
-            </a>
-        </p>
-        <img class="nf" src="<?php echo G5_THEME_IMG_URL; ?>/NETFLIX.jpg" alt="netflix">
+        <div class="pro_ft_r">
+            <img class="npca" src="<?php echo G5_THEME_IMG_URL; ?>/NPCA_Simple_Logo_RGB.jpg" alt="netflix">
+            <p class="pro_validator">
+                <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
+                    <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="20" width="100">
+                </a>
+            </p>
+        </div>
         <a href="#" class="ir pro_btn_top">상단으로</a>
     </div>
 </footer>
